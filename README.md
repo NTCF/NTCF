@@ -71,7 +71,7 @@ ntcf info honeypot.ntcf
 
 # 4. Search — segments that can't match are pruned, not decompressed
 ntcf search ip 45.61.0.7 honeypot.ntcf
-ntcf search country RU honeypot.ntcf
+ntcf search country TR honeypot.ntcf
 ntcf search port 22 honeypot.ntcf
 
 # 5. Analytics
@@ -112,11 +112,11 @@ sch := &ntcf.Schema{Name: "events", Version: 1, Columns: []ntcf.Column{
 }}
 
 w, _ := ntcf.NewWriter(file, sch, ntcf.DefaultWriterOptions())
-_ = w.Append(ntcf.Record{ntcf.IntVal(ts), ntcf.BytesVal(ip16), ntcf.BytesVal([]byte("RU"))})
+_ = w.Append(ntcf.Record{ntcf.IntVal(ts), ntcf.BytesVal(ip16), ntcf.BytesVal([]byte("TR"))})
 _ = w.Close()
 
 r, _ := ntcf.Open("events.ntcf")
-res, _ := r.Query("SELECT count(*) FROM events WHERE country='RU'")
+res, _ := r.Query("SELECT count(*) FROM events WHERE country='TR'")
 fmt.Println(res.Count)
 ```
 
