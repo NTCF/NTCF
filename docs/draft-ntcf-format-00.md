@@ -10,9 +10,9 @@ keyword: telemetry, compression, columnar, netflow, security, logging
 stand_alone: yes
 pi: [toc, sortrefs, symrefs]
 author:
-  - name: The NTCF Authors
+  - name: Alptekin Sunnetci
     organization: NTCF Project
-    email: spec@ntcf.dev
+    email: salptekins@gmail.com
 ---
 
 # Abstract
