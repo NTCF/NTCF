@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "name": "honeypot",
+  "version": 1,
+  "columns": [
+    { "name": "timestamp", "type": "timestamp" },
+    { "name": "srcip",     "type": "ip",     "indexed": true },
+    { "name": "srcport",   "type": "port" },
+    { "name": "dstport",   "type": "port",   "indexed": true },
+    { "name": "protocol",  "type": "enum",   "indexed": true },
+    { "name": "eventtype", "type": "enum",   "indexed": true },
+    { "name": "username",  "type": "string", "indexed": true, "nullable": true },
+    { "name": "password",  "type": "string", "nullable": true },
+    { "name": "country",   "type": "enum",   "indexed": true, "nullable": true },
+    { "name": "asn",       "type": "uint",   "indexed": true }
+  ]
+}

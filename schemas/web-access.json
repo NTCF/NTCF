@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "name": "web-access",
+  "version": 1,
+  "columns": [
+    { "name": "timestamp", "type": "timestamp" },
+    { "name": "srcip",     "type": "ip",     "indexed": true },
+    { "name": "method",    "type": "enum",   "indexed": true },
+    { "name": "path",      "type": "string", "indexed": true },
+    { "name": "status",    "type": "uint",   "indexed": true },
+    { "name": "bytes",     "type": "uint" },
+    { "name": "referer",   "type": "string", "nullable": true },
+    { "name": "useragent", "type": "string", "indexed": true, "nullable": true }
+  ]
+}

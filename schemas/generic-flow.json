@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "name": "generic-flow",
+  "version": 1,
+  "columns": [
+    { "name": "timestamp", "type": "timestamp" },
+    { "name": "srcip",     "type": "ip",        "indexed": true },
+    { "name": "dstip",     "type": "ip",        "indexed": true },
+    { "name": "srcport",   "type": "port" },
+    { "name": "dstport",   "type": "port",      "indexed": true },
+    { "name": "protocol",  "type": "enum",      "indexed": true },
+    { "name": "asn",       "type": "uint",      "indexed": true },
+    { "name": "country",   "type": "enum",      "indexed": true, "nullable": true },
+    { "name": "eventtype", "type": "enum",      "indexed": true },
+    { "name": "bytes",     "type": "uint" },
+    { "name": "packets",   "type": "uint" }
+  ]
+}

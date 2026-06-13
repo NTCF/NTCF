@@ -1,0 +1,28 @@
+# golangci-lint configuration for NTCF.
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell
+    - unconvert
+    - bodyclose
+    - errorlint
+
+  settings:
+    misspell:
+      locale: US
+
+  exclusions:
+    rules:
+      # Test files may ignore errors for brevity in fixtures.
+      - path: _test\.go
+        linters:
+          - errcheck

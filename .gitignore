@@ -1,0 +1,25 @@
+# Binaries
+/ntcf
+/ntcf.exe
+/dist/
+*.exe
+*.test
+*.out
+
+# NTCF data artifacts produced by examples/benchmarks
+*.ntcf
+*.jsonl
+
+# Go
+/vendor/
+coverage.txt
+profile.out
+
+# Fuzzing corpus generated locally (keep seed corpora under testdata/)
+**/testdata/fuzz/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
