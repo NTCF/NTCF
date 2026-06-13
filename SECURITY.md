@@ -12,7 +12,7 @@ for a vulnerability.
 
 - Use GitHub's **"Report a vulnerability"** (Security → Advisories) on this
   repository, or
-- email the maintainers at **security@ntcf.dev** (PGP welcome).
+- email the maintainers at **alptekins@gmail.com** (PGP welcome).
 
 Include a description, affected version/commit, and a reproduction (a crafted
 `.ntcf` file or input is ideal). We aim to acknowledge within 3 business days and
